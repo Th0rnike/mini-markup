@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+:root{
+    --main-gradient-start: hsl(252, 100%, 67%);
+    --main-gradient-end: hsl(241, 81%, 54%);
+    --score-gradient-start: hsla(256, 72%, 46%, 1);
+    --score-gradient-end: hsla(241, 72%, 46%, 0);
+    --border-radius: 20px;
+}
+
+#score-div{
+    background: linear-gradient(to bottom, var(--main-gradient-start), var(--main-gradient-end));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0 0 10% 10%;
+}
+
+#score-div > :not(#gradient-div){
+    padding: 10px;
+}
+
+#score-div h1{
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+    opacity: 0.7;
+}
+
+#gradient-div{
+    background: linear-gradient(to bottom, var(--score-gradient-start), var(--score-gradient-end));
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: 15px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gradient-div h2{
+    font-size: 45px;
+}
+
+#gradient-div h3{
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+#comment-result{
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#comment-result h2{
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+#comment-result p{
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* second part */
+
+#result-div{
+    margin: 8%;
+}
+
+#result-div ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.inside{
+    display: flex;  
+    align-items: center;
+}
+
+.inside p{
+    padding-left: 10%;
+    font-size: 0.8rem;
+}
+
+.color-red{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.color-yellow{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.07);
+}
+
+.color-gr{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.color-bl{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.07);
+}
+
+.inside-points{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.inside-points span{
+    color: black;
+}
+
+#continue{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    margin-top: 8%;
+}
+
+
+
+/* desktop size */
